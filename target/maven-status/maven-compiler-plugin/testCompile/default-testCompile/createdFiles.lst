@@ -1,0 +1,7 @@
+ar\com\proyectoapp\negocio\ComentarioEntityTest.class
+ar\com\proyectoapp\negocio\UsarioEntityTest.class
+ar\com\proyectoapp\negocio\IngredientesEntityTest.class
+ar\com\proyectoapp\negocio\RecetasEntityTest.class
+ar\com\proyectoapp\api\rest\UserApiRest.class
+ar\com\proyectoapp\servicios\UsuarioServiceIntegrationTest.class
+ar\com\proyectoapp\forms\package-info.class

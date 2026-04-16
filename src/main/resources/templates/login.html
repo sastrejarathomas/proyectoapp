@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+
+<body>
+
+<main layout:fragment="contenido">
+
+    <section class="hero">
+
+        <div class="form-container">
+
+            <h2 th:text="#{Iniciar.sesion}"></h2>
+
+           <form th:action="@{/sesion/sigIn}" method="post">
+
+		    <input type="text" name="username" placeholder="Email"><br><br>
+		    <input type="password" name="password" placeholder="Contraseña"><br><br>
+		
+		    <button class="btn" type="submit" th:text="#{ingresar}"></button>
+		
+		  </form>
+
+            <br>
+            <a class="btn" th:href="@{/usuario/registro}" th:text="#{crear.cuenta}"></a>
+
+        </div>
+
+    </section>
+
+</main>
+
+</body>
+</html>

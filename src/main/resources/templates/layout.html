@@ -1,0 +1,57 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Easy cooking</title>
+	<link rel="stylesheet" href="/css/styles.css" th:href="@{/css/styles.css}">
+</head>
+
+<body>
+
+	<header>
+    <div class="marquee">
+        <div class="marquee-content">
+            <span>Easy Cooking 🍳</span>
+            <span>Easy Cooking 🍳</span>
+            <span>Easy Cooking 🍳</span>
+            <span>Easy Cooking 🍳</span>
+            <span>Easy Cooking 🍳</span>
+            <span>Easy Cooking 🍳</span>
+            <span>Easy Cooking 🍳</span>
+            <span>Easy Cooking 🍳</span>
+            <span>Easy Cooking 🍳</span>
+        </div>
+    </div>
+</header>
+
+	<nav>
+		<a th:href="@{/}">Inicio</a>
+		<a th:href="@{/usuario/registro}">Registro</a>
+		<a th:href="@{/sesion/iniciar}">Login</a>
+	</nav>
+
+	<div class="app-container">
+
+		<aside class="sidebar" >
+			
+
+			<a th:href="@{/principal}">Inicio</a>
+			<a th:href="@{/recetas}">Recetas</a>
+			<a th:href="@{/perfil}">Perfil</a>
+			<a th:href="@{/recetas/crear}">Crear receta</a>
+			<a th:href="@{/guardado}">Guardado</a>
+		</aside>
+
+		<div class="contenido">
+			<main layout:fragment="contenido"></main>
+		</div>
+
+	</div>
+
+	<footer>
+	</footer>
+
+</body>
+</html>
