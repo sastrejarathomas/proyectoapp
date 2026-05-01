@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout}">
+
+<body>
+
+	<main layout:fragment="contenido">
+
+		<section class="recetas">
+
+			<h2 th:text="#{recetas}"></h2>
+			<p th:text="#{explora.algunas.ideas.deliciosas}"></p>
+
+			<div class="cards">
+
+				<div class="card">
+					<h3>Pizza casera</h3>
+					<p>Facil rápida y deliciosa</p>
+					<p>cantidad de ingredientes 4</p>
+				</div>
+
+				<div class="card">
+					<h3>Pasta Italiana</h3>
+					<p>clasica y llena de sabor</p>
+					<p>cantidad de ingredientes 6</p>
+				</div>
+
+				<div class="card">
+					<h3>Ensalada Saludable</h3>
+					<p>lligera y Nutritiva</p>
+					<p>cantidad de ingredientes 4</p>
+				</div>
+
+				<div class="card">
+					<h3>Hamburguesa</h3>
+					<p>Perfecta para cualquier ocasión</p>
+					<p>cantidad de ingredientes 4</p>
+				</div>
+
+			</div>
+			<br> <br> <a class="btn" th:href="@{/recetas/ver/1}">Ver 1 
+				receta</a> <a class="btn" th:href="@{/recetas/ver/2}">Ver receta 2 </a> <a
+				class="btn" th:href="@{/recetas/ver/3}">Ver receta 3 </a> <a
+				class="btn" th:href="@{/recetas/ver/4}">Ver receta 4 </a> <a
+				class="btn" th:href="@{/principal}">⬅ Volver</a>
+
+		</section>
+
+	</main>
+
+</body>
+</html>

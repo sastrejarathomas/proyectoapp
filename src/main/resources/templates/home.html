@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+
+<body>
+
+<main layout:fragment="contenido">
+
+    <section class="hero">
+        <h2 th:text="#{home.bienvenida}"></h2>
+        <p th:text="#{home.descripcion}"></p>
+
+        <a class="btn" th:href="@{/usuario/registro}" th:text="#{home.boton.comenzar}"></a>
+    </section>
+
+</main>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+-------------------------------------------------------------------------------
+Test set: ar.com.proyectoapp.negocio.UsarioEntityTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 7, Errors: 1, Skipped: 0, Time elapsed: 0.033 s <<< FAILURE! -- in ar.com.proyectoapp.negocio.UsarioEntityTest
+ar.com.proyectoapp.negocio.UsarioEntityTest.noPermiteContrasenaVacia -- Time elapsed: 0.012 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.NullPointerException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3128)
+	at ar.com.proyectoapp.negocio.UsarioEntityTest.noPermiteContrasenaVacia(UsarioEntityTest.java:44)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.util.List.add(Object)" because "this.permisos" is null
+	at ar.com.proyectoapp.negocios.Usuario.<init>(Usuario.java:43)
+	at ar.com.proyectoapp.negocio.UsarioEntityTest.lambda$noPermiteContrasenaVacia$0(UsarioEntityTest.java:45)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+
+ar.com.proyectoapp.negocio.UsarioEntityTest.noDebePermitirContrasenaEncadena -- Time elapsed: 0.003 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.NullPointerException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3128)
+	at ar.com.proyectoapp.negocio.UsarioEntityTest.noDebePermitirContrasenaEncadena(UsarioEntityTest.java:66)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.util.List.add(Object)" because "this.permisos" is null
+	at ar.com.proyectoapp.negocios.Usuario.<init>(Usuario.java:43)
+	at ar.com.proyectoapp.negocio.UsarioEntityTest.lambda$noDebePermitirContrasenaEncadena$0(UsarioEntityTest.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+
+ar.com.proyectoapp.negocio.UsarioEntityTest.noPermiteNombreVacio -- Time elapsed: 0.002 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.NullPointerException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3128)
+	at ar.com.proyectoapp.negocio.UsarioEntityTest.noPermiteNombreVacio(UsarioEntityTest.java:37)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.util.List.add(Object)" because "this.permisos" is null
+	at ar.com.proyectoapp.negocios.Usuario.<init>(Usuario.java:43)
+	at ar.com.proyectoapp.negocio.UsarioEntityTest.lambda$noPermiteNombreVacio$0(UsarioEntityTest.java:38)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+
+ar.com.proyectoapp.negocio.UsarioEntityTest.noPermiteEdadNegativa -- Time elapsed: 0.001 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.NullPointerException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3128)
+	at ar.com.proyectoapp.negocio.UsarioEntityTest.noPermiteEdadNegativa(UsarioEntityTest.java:23)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.util.List.add(Object)" because "this.permisos" is null
+	at ar.com.proyectoapp.negocios.Usuario.<init>(Usuario.java:43)
+	at ar.com.proyectoapp.negocio.UsarioEntityTest.lambda$noPermiteEdadNegativa$0(UsarioEntityTest.java:24)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+
+ar.com.proyectoapp.negocio.UsarioEntityTest.noPermiteEmailInvalido -- Time elapsed: 0.001 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.NullPointerException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3128)
+	at ar.com.proyectoapp.negocio.UsarioEntityTest.noPermiteEmailInvalido(UsarioEntityTest.java:30)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.util.List.add(Object)" because "this.permisos" is null
+	at ar.com.proyectoapp.negocios.Usuario.<init>(Usuario.java:43)
+	at ar.com.proyectoapp.negocio.UsarioEntityTest.lambda$noPermiteEmailInvalido$0(UsarioEntityTest.java:31)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+
+ar.com.proyectoapp.negocio.UsarioEntityTest.emailDebeTenerArroba -- Time elapsed: 0.002 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.NullPointerException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3128)
+	at ar.com.proyectoapp.negocio.UsarioEntityTest.emailDebeTenerArroba(UsarioEntityTest.java:58)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.util.List.add(Object)" because "this.permisos" is null
+	at ar.com.proyectoapp.negocios.Usuario.<init>(Usuario.java:43)
+	at ar.com.proyectoapp.negocio.UsarioEntityTest.lambda$emailDebeTenerArroba$0(UsarioEntityTest.java:59)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+
+ar.com.proyectoapp.negocio.UsarioEntityTest.crearUsuarioValido -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "java.util.List.add(Object)" because "this.permisos" is null
+	at ar.com.proyectoapp.negocios.Usuario.<init>(Usuario.java:43)
+	at ar.com.proyectoapp.negocio.UsarioEntityTest.crearUsuarioValido(UsarioEntityTest.java:13)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+ar.com.proyectoapp.negocio.UsarioEntityTest.noPermiteContrasenaMuyCorta -- Time elapsed: 0.001 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.NullPointerException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3128)
+	at ar.com.proyectoapp.negocio.UsarioEntityTest.noPermiteContrasenaMuyCorta(UsarioEntityTest.java:51)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.util.List.add(Object)" because "this.permisos" is null
+	at ar.com.proyectoapp.negocios.Usuario.<init>(Usuario.java:43)
+	at ar.com.proyectoapp.negocio.UsarioEntityTest.lambda$noPermiteContrasenaMuyCorta$0(UsarioEntityTest.java:52)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+
